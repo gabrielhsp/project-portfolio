@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fillipi Paez Galvani</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <a href="#sectionstart" class="logo">Fillipi P. Galvani</a>
+        <ul>
+            <li><a href="#sectionstart" class="active">Início</a></li>
+            <li><a href="#sectionaboutme">Sobre mim</a></li>
+            <li><a href="#sectionprojects">Projetos</a></li>
+            <li><a href="#sectioncontacts">Contato</a></li>
+        </ul>
+    </header>
+
+    <section id="sectionstart">
+        <img src="img/stars.png" id="stars">
+        <img src="img/frontimage.png" id="frontimage">
+        <img src="img/midimage.png" id="midimage">
+        <img src="img/backgroundimage.png" id="backgroundimage">
+        <img src="img/moon.png" id="moon">
+        <h2 id="text"><span>Conheça minha</span><br>JORNADA</h2>
+    </section>
+
+    <section id="sectionaboutme">
+        <h1>Sessão 1</h1>
+    </section>
+
+    <section id="sectionprojects">
+        <h1>Sessão 1</h1>
+    </section>
+
+    <section id="sectioncontacts">
+        <h1>Sessão 1</h1>
+    </section>
+
+    <footer class="rodape">
+        <p>
+            Produzido orgulhosamente por: Fillipi P. Galvani.<br>
+            Créditos Imagem Vetor: <a href='https://br.freepik.com/vetores/viagem'>Viagem vetor criado por upklyak - br.freepik.com</a>
+        </p>
+    
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let frontimage = document.getElementById('frontimage');
+            
+
+        window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        frontimage.style.top = 0 + value * -0.005 + '%';
+        stars.style.left = value * 0.010 + '%';
+        moon.style.top = value * 0.020 + '%';
+        })
+    </script>
+
+  </body>
+
+</html>
